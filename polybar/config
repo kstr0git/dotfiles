@@ -1,0 +1,63 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
+
+[bar/main]
+override-redirect = true
+wm-restack = bspwm
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+width = 100%
+height = 22
+radius = 0.0
+line-size = 2
+border-bottom-size = 4
+border-top-size = 4
+border-color = ${colors.background}
+line-color = ${colors.color1}
+offset-y = 0
+offset-x = 0
+padding = 2
+module-margin = 1
+
+font-0 = xos4 Terminus:pixelsize=8;2
+font-1 = "Wuncon Siji:size=12;2"
+font-2 = "Font Awesome 5 Free Solid:style=solid:antialias=false:size=7;2"
+font-3 = "Font Awesome 5 Free:style=regular:antialias=false:size=7;2"
+font-4 = "Font Awesome 5 Brands:style=regular:antialias=false:size=7;2"
+
+modules-right = battery alsa memory backlight cpu
+modules-center = bspwm
+modules-left =  date mpd
+; Position of the system tray window
+tray-position = left
+tray-maxsize = 15
+tray-background = ${colors.background}
+tray-offset-x = 0
+tray-offset-y = 0
+; Pad the sides of each tray icon
+tray-padding = 1
+
+[settings]
+label-focused-underline= ${colors.background}
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+screenchange-reload = true
+pseudo-transparency = true
+
+

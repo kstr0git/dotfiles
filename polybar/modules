@@ -1,20 +1,18 @@
-module/bspwm]
+[module/bspwm]
 type = internal/bspwm
 format = <label-state> <label-mode>
 
-ws-icon-0 = term;
-ws-icon-1 = web;
-ws-icon-2 = code;
-ws-icon-3 = files;
-ws-icon-4 = media;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
 ws-icon-5 = extra;
 ws-icon-default = 
 
-label-empty-foreground = ${colors.color8}
+label-empty-foreground = ${colors.color0}
 label-empty-background = ${colors.background}
 label-focused = %icon% %name%
-label-focused-background = ${colors.color0}
-label-focused-underline = ${colors.color4}
 label-focused-padding = 2
 label-occupied = %icon%
 label-occupied-padding = 2
@@ -26,8 +24,7 @@ type = internal/date
 
 date-alt = %d/%m/%Y
 time = %I:%M
-format =  <label>
-format-background = ${colors.color0}
+format = <label>
 label =  %date%%time%
 format-padding = 2
 
@@ -65,23 +62,19 @@ animation-charging-7 = 
 animation-charging-8 = 
 animation-charging-framerate = 750
 
-format-charging-background = ${colors.color0}
-format-discharging-background = ${colors.color0}
-format-full-background = ${colors.color0}
 format-charging-padding = 2
 format-discharging-padding = 2
 format-full-padding = 2
 
 [module/network]
 type = internal/network
-interface = wlo1
+interface = wlp3s0
 interval = 3.0
 unknown-as-up = true
 accumulate-stats = true
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
-format-connected-background = ${colors.color0}
 format-connected-padding = 2
 
 ramp-signal-0 = 
@@ -96,8 +89,6 @@ type = internal/alsa
 format-volume = <ramp-volume> <label-volume>
 format-muted-prefix = 
 label-muted = " Muted"
-format-muted-background = ${colors.color0}
-format-volume-background = ${colors.color0}
 format-volume-padding = 2
 format-muted-padding = 2
 
@@ -113,7 +104,6 @@ type = internal/backlight
 card = intel_backlight
 enable-scroll = true
 format =  <label>
-format-background = ${colors.color0}
 format-padding = 2
 label = %percentage%%
 
@@ -121,7 +111,6 @@ label = %percentage%%
 type = internal/cpu
 
 format =  <label>
-format-background = ${colors.color0}
 format-padding = 2
 label = %percentage%%
 
@@ -131,7 +120,6 @@ interval = 3
 
 format =  <label>
 label = %percentage_used%%
-format-background = ${colors.color0}
 format-padding = 2
 
 [module/mpd]
@@ -141,5 +129,4 @@ format-online =   <label-song>
 label-song = %artist% - %title%
 label-offline = ""
 label-song-maxlen = 35
-format-online-background = ${colors.color0}
 format-online-padding = 2

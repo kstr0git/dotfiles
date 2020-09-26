@@ -34,13 +34,13 @@ offset-x = 0
 padding = 2
 module-margin = 1
 
-font-0 = xos4 Terminus:pixelsize=8;2
-font-1 = "Wuncon Siji:size=12;2"
+font-0 = "Iosevka:size=8;2"
+font-1 = "Siji:size=11;2"
 font-2 = "Font Awesome 5 Free Solid:style=solid:antialias=false:size=7;2"
 font-3 = "Font Awesome 5 Free:style=regular:antialias=false:size=7;2"
 font-4 = "Font Awesome 5 Brands:style=regular:antialias=false:size=7;2"
 
-modules-right = battery alsa memory backlight cpu
+modules-right = battery alsa backlight memory network cpu
 modules-center = bspwm
 modules-left =  date mpd
 ; Position of the system tray window

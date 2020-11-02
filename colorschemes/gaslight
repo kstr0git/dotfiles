@@ -1,0 +1,25 @@
+! X colors.
+*.foreground:       #8cacbd
+*.background:       #0a0b0e
+
+
+! Colors 0-15.
+*.color0: #0a0b0e
+*.color1: #203653
+*.color2: #174F4A
+*.color3: #196C50
+*.color4: #206A5C
+*.color5: #239862
+*.color6: #25C15A
+*.color7: #8cacbd
+*.color8: #627884
+*.color9: #203653
+*.color10: #174F4A
+*.color11: #196C50
+*.color12: #206A5C
+*.color13: #239862
+*.color14: #25C15A
+*.color15: #8cacbd
+
+! Black color that will not be affected by bold highlighting.
+*.color66: #0a0b0e

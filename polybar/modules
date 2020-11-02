@@ -10,8 +10,9 @@ ws-icon-4 = 5;
 ws-icon-5 = extra;
 ws-icon-default = 
 
-label-empty-foreground = ${colors.color0}
+label-empty-foreground = ${colors.color1}
 label-empty-background = ${colors.background}
+label-focused-foreground = ${colors.color5}
 label-focused = %icon% %name%
 label-focused-padding = 2
 label-occupied = %icon%
@@ -22,10 +23,10 @@ label-empty-padding = 2
 [module/date]
 type = internal/date
 
-date-alt = %d/%m/%Y
-time = %I:%M
-format = <label>
-label =  %date%%time%
+date-alt = %d/%m/%Y
+time = %I:%M:%S
+format = <label>
+label =  %date% %time%
 format-padding = 2
 
 [module/battery]
@@ -61,6 +62,7 @@ animation-charging-6 = 
 animation-charging-7 = 
 animation-charging-8 = 
 animation-charging-framerate = 750
+animation-charging-foreground = ${colors.color5}
 
 format-charging-padding = 2
 format-discharging-padding = 2
@@ -75,6 +77,7 @@ accumulate-stats = true
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
+label-connected-foreground = ${colors.color5}
 format-connected-padding = 2
 
 ramp-signal-0 = 
@@ -83,12 +86,16 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
+label-disconnected = Disconnected
+format-disconnected-padding = 2
+
 [module/alsa]
 type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
 format-muted-prefix = 
 label-muted = " Muted"
+label-muted-foreground = ${colors.color5}
 format-volume-padding = 2
 format-muted-padding = 2
 
@@ -125,8 +132,9 @@ format-padding = 2
 [module/mpd]
 type = internal/mpd
 
-format-online =   <label-song>
+format-online =  <label-song>
 label-song = %artist% - %title%
 label-offline = ""
-label-song-maxlen = 35
+label-song-maxlen = 45
 format-online-padding = 2
+label-song-foreground = ${colors.color5}

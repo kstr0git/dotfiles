@@ -9,7 +9,7 @@ The main purpose of this project was less focused on the core functionality of m
 
 <h2 align="center">Preview</h2>
 
-<h3>Screenshots outdated</h3>
+<h3>Screenshots outdated...</h3>
 
 ![screenshot](/screenshots/2020-09-26-184252_1366x768_scrot.png "ncmpcpp & ranger")
 

@@ -21,12 +21,12 @@ The main purpose of this project was less focused on the core functionality of m
 + **WM**                : Bspwm
 + **HOTKEY DAEMON**     : Sxhkd
 + **BAR**               : Polybar
-+ **TERMINAL**          : Termite
++ **TERMINAL**          : Alacritty
 + **SHELL**             : Bash
 + **EDITOR**            : Vim
-+ **TERMINAL FONT**     : Iosevka
-+ **BAR FONT**          : Iosevka
-+ **ICON FONTS**        : Siji, Font Awesome
++ **TERMINAL FONT**     : Fira Code
++ **BAR FONT**          : Fira Code
++ **ICON FONTS**        : Font Awesome
 + **MUSIC PLAYER**      : Mpd, Ncmpcpp
 + **BROWSER**           : Firefox
 + **FILE MANAGER**      : Ranger

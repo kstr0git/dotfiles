@@ -1,31 +1,17 @@
-Dotfiles
-========
+## My Tmux and Neovim configuration.
 
-<h3>Screenshots outdated...</h3>
+#### Installation:
 
-![screenshot](/screenshots/2020-09-26-184252_1366x768_scrot.png "ncmpcpp & ranger")
-
-![screenshot](/screenshots/2020-09-26-184419_1366x768_scrot.png "Rofi")
-
-![screenshot](/screenshots/2020-09-26-210343_1366x768_scrot.png "neofetch & dunst notifcation")
-
-<h2 align="center">Details</h2>
-
-+ **OS**                : Arch
-+ **WM**                : Bspwm
-+ **HOTKEY DAEMON**     : Sxhkd
-+ **BAR**               : Polybar
-+ **TERMINAL**          : Alacritty
-+ **SHELL**             : Bash
-+ **EDITOR**            : Vim
-+ **TERMINAL FONT**     : Fira Code
-+ **BAR FONT**          : Fira Code
-+ **ICON FONTS**        : Font Awesome
-+ **MUSIC PLAYER**      : Mpd, Ncmpcpp
-+ **BROWSER**           : Firefox
-+ **FILE MANAGER**      : Ranger
-+ **NOTIFICATION**      : Dunst
-+ **VIDEO PLAYER**      : Mpv
-+ **SCREEN CAPTURE**    : Scrot
-+ **IMAGE VIEWER**      : Feh
-+ **APP LAUNCHER**      : Rofi
+```
+$ git clone git@github.com:kstr0git/dotfiles.git ~/.config/
+```
+### Requirements for Neovim
+- Neovim >= **0.9.0** (needs to be built with **LuaJIT**)
+- Git >= **2.19.0** (for partial clones support)
+- [LazyVim](https://www.lazyvim.org/)
+- a [Nerd Font](https://www.nerdfonts.com/)(v3.0 or greater) **_(optional, but needed to display some icons)_**
+- a terminal that support true color and *undercurl*:
+  - [kitty](https://github.com/kovidgoyal/kitty) **_(Linux & Macos)_**
+  - [wezterm](https://github.com/wez/wezterm) **_(Linux, Macos & Windows)_**
+  - [alacritty](https://github.com/alacritty/alacritty) **_(Linux, Macos & Windows)_**
+  - [iterm2](https://iterm2.com/) **_(Macos)_**

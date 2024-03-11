@@ -1,5 +1,0 @@
-def_key "="
-  volume_up
-
-def_key "`"
-  show_clock
